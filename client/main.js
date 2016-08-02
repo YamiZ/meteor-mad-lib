@@ -6,26 +6,10 @@ Template.body.events({
 		let adverb = template.find('#adverb').value;
 		let noun = template.find('#noun').value;
 		let verb = template.find('#verb').value;
-
-		let madLib = exclamation + "you say"+ adverb+" "+noun+" "+verb;
+		let madLib = "'"+exclamation+"!' you say, as you "+adverb+" jump onto your "+noun+" and "+verb+" into the sunset.";
 
 		$("#createMadLib").hide();
 		$("#createMadLib").text(madLib).fadeIn("slow").css("color","#0000ff");
 		
 	}
 });
-
-/*Template.body.helpers({
-	exclamation: function(){
-		return Session.get('exclamation')
-	},
-	adverb: function(){
-		return Session.get('adverb')
-	},
-	noun: function(){
-		return Session.get('noun')
-	},
-	verb: function(){
-		return Session.get('verb')
-	},
-});*/
